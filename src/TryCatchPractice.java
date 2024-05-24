@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TryCatchPractice {
 
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+        int[] arr = {0, 1, 2, 13, 17, 20, 21, 8, 9, 99};
 
         Scanner input = new Scanner(System.in);
         System.out.print("Dizinin görmek istediğiniz indeks numarasını giriniz : ");
