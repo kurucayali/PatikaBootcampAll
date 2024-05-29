@@ -36,7 +36,7 @@ public class Book implements Comparable<Book> {
 
     @Override
     public String toString() {
-        return String.format("| %-22s | %-10d | %-16s | %-10s |", name, pageCount, author, publishDate);
+        return String.format("| %-22s | %-10d | %-22s | %-10s |", name, pageCount, author, publishDate);
     }
 
 }

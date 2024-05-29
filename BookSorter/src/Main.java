@@ -4,11 +4,11 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
-        Book book1 = new Book("The Hobbit", 310, "J.R.R. Tolkien", "1937");
-        Book book2 = new Book("1984", 328, "George Orwell", "1949");
-        Book book3 = new Book("To Kill a Mockingbird", 281, "Harper Lee", "1960");
-        Book book4 = new Book("Pride and Prejudice", 279, "Jane Austen", "1813");
-        Book book5 = new Book("Moby-Dick", 635, "Herman Melville", "1851");
+        Book book1 = new Book("Tutunamayanlar", 724, "Oğuz Atay", "1972");
+        Book book2 = new Book("Saatleri Ayarlama Ens.", 361, "Ahmet Hamdi Tanpınar", "1961");
+        Book book3 = new Book("Kürk Mantolu Madonna", 160, "Sabahattin Ali", "1943");
+        Book book4 = new Book("Araba Sevdası", 272, "Recaizade Mahmud Ekrem", "1897");
+        Book book5 = new Book("Serenad", 481, "Zülfü Livaneli", "2011");
 
         Set<Book> booksByName = new TreeSet<>();
         booksByName.add(book1);
