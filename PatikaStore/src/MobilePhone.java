@@ -1,117 +1,42 @@
-public class MobilePhone {
-    private int id;
-    private String productName;
-    private double price;
-    private String brand ;
+public class MobilePhone extends Product {
     private int storage;
-    private double screen;
-    private int camera;
-    private int batteryCap;
+    private double screenSize;
+    private int battery;
     private int ram;
     private String color;
-    private int quantity;
 
-    public MobilePhone(int id, String productName,  double price,String brand, int storage, double screen, int camera, int batteryCap, int ram, String color, int quantity) {
-        this.id = id;
-        this.productName = productName;
-        this.price = price;
-        this.brand = brand;
+    public MobilePhone(int id, String name, double price, double discountRate, int stock, Brand brand, int storage, double screenSize, int battery, int ram, String color) {
+        super(id, name, price, discountRate, stock, brand);
         this.storage = storage;
-        this.screen = screen;
-        this.camera = camera;
-        this.batteryCap = batteryCap;
+        this.screenSize = screenSize;
+        this.battery = battery;
         this.ram = ram;
         this.color = color;
-        this.quantity=quantity;
-
-
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public int getStorage() {
         return storage;
     }
 
-    public void setStorage(int storage) {
-        this.storage = storage;
+    public double getScreenSize() {
+        return screenSize;
     }
 
-    public double getScreen() {
-        return screen;
-    }
-
-    public void setScreen(double screen) {
-        this.screen = screen;
-    }
-
-    public int getCamera() {
-        return camera;
-    }
-
-    public void setCamera(int camera) {
-        this.camera = camera;
-    }
-
-    public int getBatteryCap() {
-        return batteryCap;
-    }
-
-    public void setBatteryCap(int batteryCap) {
-        this.batteryCap = batteryCap;
+    public int getBattery() {
+        return battery;
     }
 
     public int getRam() {
         return ram;
     }
 
-    public void setRam(int ram) {
-        this.ram = ram;
-    }
-
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    @Override
+    public String toString() {
+        return String.format("| %d | %-30s | %-8.1f TL | %-10s | %-10d | %-10.1f | %-10d | %-10d | %-10s |",
+                getId(), getName(), getPrice(), getBrand().getName(), storage, screenSize, battery, ram, color);
     }
 }
