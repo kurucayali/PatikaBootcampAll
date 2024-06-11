@@ -14,7 +14,7 @@ public class Main {
 
         while ((line = bReader.readLine()) != null) {
             System.out.println(line);
-            int num = Integer.valueOf(line);
+            int num = Integer.parseInt(line);
             total = total + num;
         }
         System.out.println("Bu sayıların toplamı : " + total);
