@@ -13,7 +13,7 @@ public class Main {
         BufferedReader bReader = new BufferedReader(fReader);
         String line;
 
-        System.out.println("***** NotPad *****");
+        System.out.println("***** Notlar *****");
         while ((line = bReader.readLine()) != null) {
             System.out.println(line);
         }
