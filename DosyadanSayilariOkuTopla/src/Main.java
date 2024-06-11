@@ -18,5 +18,7 @@ public class Main {
             total = total + num;
         }
         System.out.println("Bu sayıların toplamı : " + total);
+
+        bReader.close();
     }
 }
