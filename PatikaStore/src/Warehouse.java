@@ -54,6 +54,7 @@ public class Warehouse {
 
         System.out.print("Brand: ");
         scanner.nextLine();  // Consume newline
+
         String brandName = scanner.nextLine();
         Brand brand = findBrandByName(brandName);
 
